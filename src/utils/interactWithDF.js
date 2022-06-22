@@ -3,7 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 // read from file
-const readFromFile = (fileName) => {
+const readFromDataFile = (fileName) => {
   try {
     const filePath = path.join(__dirname, `../../db/${fileName}.json`);
 
@@ -21,7 +21,7 @@ const readFromFile = (fileName) => {
 };
 
 //write to file
-const writeToFile = (fileName, data) => {
+const writeToDataFile = (fileName, data) => {
   try {
     //get path to the db file
     const filePath = path.join(__dirname, `../../db/${fileName}.json`);
@@ -37,4 +37,4 @@ const writeToFile = (fileName, data) => {
   }
 };
 
-module.exports = { readFromFile, writeToFile };
+module.exports = { readFromDataFile, writeToDataFile };
