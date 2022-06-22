@@ -45,11 +45,11 @@ const createNote = (req, res) => {
   const id = uuidv4();
 
   //write note into data file
-  const newNote = { id, title, text };
+  const createANote = { id, title, text };
   writeToDataFile("db", [newNote, ...notes]);
 
   //send file as response - is it needed?
-  res.json(newNote);
+  res.json(createANote);
 };
 
 module.exports = { getNotes, deleteNote, createNote };
