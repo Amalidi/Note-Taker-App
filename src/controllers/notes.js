@@ -49,10 +49,7 @@ const deleteNote = (req, res) => {
 
 const createNote = (req, res) => {
   try {
-    //get data from db
-    const notes = readFromDataFile("db");
-
-    //get data from the user
+    //get data
     const { title, text } = req.body;
 
     //generate unique id
@@ -60,16 +57,22 @@ const createNote = (req, res) => {
 
     //write the note into a data file
     const createANote = { id, title, text };
-    writeDataToFile("db", [createANote, ...notes]);
 
-    //read from data file
-    const updatedNotes = readFromDataFile("db");
+    //get data
+    const notes = readFromDataFile("db");
+
+    // insert new note
+    notes.push(createANote);
+    console.log(notes);
+
+    // write to file(db)
+    writeToDataFile("db", notes);
 
     //send file as a response
-    return res.json(createANote);
+    return res.json({ success: true, data: notes });
   } catch (error) {
-    console.log("[ERROR] : Server error");
-    return res.status(500).json({ message: "server error" });
+    console.log(`[ERROR: Server error | ${error.message}]`);
+    return res.status(500).json({ suscess: false, error: "server error" });
   }
 };
 
