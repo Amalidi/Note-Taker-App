@@ -1,6 +1,6 @@
 # Note-Taker-App
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://note-taking-app-heroku.herokuapp.com/)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -9,7 +9,7 @@
 - [Description](#description)
 - [User Story](#user-story-🧍)
 - [Getting Started](#getting-started-🚀)
-- [Projects Screenshots](#projects-screenshots)
+- [Project Screenshots](#project-screenshots)
 - [Questions](#questions)
 
 ## Description
@@ -27,7 +27,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 ## Deployed App
 
-[Heroku deployed link](https://git.heroku.com/note-taking-app-heroku.git)
+[Heroku deployed link](https://note-taking-app-heroku.herokuapp.com/)
 
 ## Getting Started 🚀
 
@@ -44,7 +44,7 @@ cd Note-Taker-App
 npm run start
 ```
 
-## Projects Screenshots
+## Project Screenshots
 
 ![Image of the project](./public/assets/Images/homepage.png)
 
