@@ -7,8 +7,9 @@
 ## Table of Contents
 
 - [Description](#description)
-- [User Story](#user-story-🧍)
-- [Getting Started](#getting-started-🚀)
+- [User Story](#user-story)
+- [Deployed App](#deployed-app)
+- [Getting Started](#getting-started)
 - [Project Screenshots](#project-screenshots)
 - [Questions](#questions)
 
@@ -16,7 +17,7 @@
 
 The goal of this project was to modify starter code to create an application called Note Taker that can be used to write and save notes using an Express.js back end to retrieve note data from a JSON file.
 
-## User Story 🧍
+## User Story
 
 ```
 AS A small business owner
@@ -29,7 +30,7 @@ SO THAT I can organize my thoughts and keep track of tasks I need to complete
 
 [Heroku deployed link](https://note-taking-app-heroku.herokuapp.com/)
 
-## Getting Started 🚀
+## Getting Started
 
 ### Installation
 
